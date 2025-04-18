@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>D&F Cosmetic & Beauty Products</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo-title">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <h1>D&F Cosmetic & Beauty Products</h1>
+    </div>
+  
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search products..." class="search-input" onkeyup="searchProducts()">
+    </div>
+  
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+   
+<main>
+  <section id="home">
+    <h2>Our Products</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="images/lipstick.jpg" alt="Lipstick">
+        <h3>Lipstick</h3>
+        <p>₹345</p>
+        <button class="razorpay-btn" data-name="Lipstick" data-amount="34500">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/foundation.jpg" alt="Foundation">
+        <h3>Foundation</h3>
+        <p>₹499</p>
+        <button class="razorpay-btn" data-name="Foundation" data-amount="49900">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/eyeliner.jpg" alt="Eyeliner">
+        <h3>Eyeliner</h3>
+        <p>₹299</p>
+        <button class="razorpay-btn" data-name="Eyeliner" data-amount="29900">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/mascara.jpg" alt="Mascara">
+        <h3>Mascara</h3>
+        <p>₹399</p>
+        <button class="razorpay-btn" data-name="Mascara" data-amount="39900">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/blush.jpg" alt="Blush">
+        <h3>Blush</h3>
+        <p>₹450</p>
+        <button class="razorpay-btn" data-name="Blush" data-amount="45000">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/highlighter.jpg" alt="Highlighter">
+        <h3>Highlighter</h3>
+        <p>₹525</p>
+        <button class="razorpay-btn" data-name="Highlighter" data-amount="52500">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/browpencil.jpg" alt="Brow Pencil">
+        <h3>Brow Pencil</h3>
+        <p>₹299</p>
+        <button class="razorpay-btn" data-name="Brow Pencil" data-amount="29900">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/primer.jpg" alt="Primer">
+        <h3>Primer</h3>
+        <p>₹550</p>
+        <button class="razorpay-btn" data-name="Primer" data-amount="55000">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/compact.jpg" alt="Compact Powder">
+        <h3>Compact Powder</h3>
+        <p>₹399</p>
+        <button class="razorpay-btn" data-name="Compact Powder" data-amount="39900">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/nailpaint.jpg" alt="Nail Paint">
+        <h3>Nail Paint</h3>
+        <p>₹199</p>
+        <button class="razorpay-btn" data-name="Nail Paint" data-amount="19900">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/makeupfixer.jpg" alt="Makeup Fixer">
+        <h3>Makeup Fixer</h3>
+        <p>₹499</p>
+        <button class="razorpay-btn" data-name="Makeup Fixer" data-amount="49900">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/concealer.jpg" alt="Concealer">
+        <h3>Concealer</h3>
+        <p>₹550</p>
+        <button class="razorpay-btn" data-name="Concealer" data-amount="55000">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/beautyblender.jpg" alt="Beauty Blender">
+        <h3>Beauty Blender</h3>
+        <p>₹299</p>
+        <button class="razorpay-btn" data-name="Beauty Blender" data-amount="29900">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/kajal.jpg" alt="Kajal">
+        <h3>Kajal</h3>
+        <p>₹149</p>
+        <button class="razorpay-btn" data-name="Kajal" data-amount="14900">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/eyeshadow.jpg" alt="Eyeshadow Palette">
+        <h3>Eyeshadow Palette</h3>
+        <p>₹750</p>
+        <button class="razorpay-btn" data-name="Eyeshadow Palette" data-amount="75000">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/lipliner.jpg" alt="Lip Liner">
+        <h3>Lip Liner</h3>
+        <p>₹199</p>
+        <button class="razorpay-btn" data-name="Lip Liner" data-amount="19900">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/lipbalm.jpg" alt="Lip Balm">
+        <h3>Lip Balm</h3>
+        <p>₹125</p>
+        <button class="razorpay-btn" data-name="Lip Balm" data-amount="12500">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/cleansingwipe.jpg" alt="Cleansing Wipes">
+        <h3>Cleansing Wipes</h3>
+        <p>₹249</p>
+        <button class="razorpay-btn" data-name="Cleansing Wipes" data-amount="24900">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/makeupkit.jpg" alt="Makeup Kit">
+        <h3>Makeup Kit</h3>
+        <p>₹1500</p>
+        <button class="razorpay-btn" data-name="Makeup Kit" data-amount="150000">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/settingpowder.jpg" alt="Setting Powder">
+        <h3>Setting Powder</h3>
+        <p>₹599</p>
+        <button class="razorpay-btn" data-name="Setting Powder" data-amount="59900">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/contour.jpg" alt="Contour Stick">
+        <h3>Contour Stick</h3>
+        <p>₹449</p>
+        <button class="razorpay-btn" data-name="Contour Stick" data-amount="44900">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/makeupbrush.jpg" alt="Makeup Brush Set">
+        <h3>Makeup Brush Set</h3>
+        <p>₹699</p>
+        <button class="razorpay-btn" data-name="Makeup Brush Set" data-amount="69900">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/glitter.jpg" alt="Face Glitter">
+        <h3>Face Glitter</h3>
+        <p>₹299</p>
+        <button class="razorpay-btn" data-name="Face Glitter" data-amount="29900">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/lipgloss.jpg" alt="Lip Gloss">
+        <h3>Lip Gloss</h3>
+        <p>₹325</p>
+        <button class="razorpay-btn" data-name="Lip Gloss" data-amount="32500">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/serum.jpg" alt="Face Serum">
+        <h3>Face Serum</h3>
+        <p>₹599</p>
+        <button class="razorpay-btn" data-name="Face Serum" data-amount="59900">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/facepack.jpg" alt="Face Pack">
+        <h3>Face Pack</h3>
+        <p>₹399</p>
+        <button class="razorpay-btn" data-name="Face Pack" data-amount="39900">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/sponge.jpg" alt="Makeup Sponge">
+        <h3>Makeup Sponge</h3>
+        <p>₹250</p>
+        <button class="razorpay-btn" data-name="Makeup Sponge" data-amount="25000">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/makeupbag.jpg" alt="Makeup Bag">
+        <h3>Makeup Bag</h3>
+        <p>₹350</p>
+        <button class="razorpay-btn" data-name="Makeup Bag" data-amount="35000">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/makeupmirror.jpg" alt="Makeup Mirror">
+        <h3>Makeup Mirror</h3>
+        <p>₹499</p>
+        <button class="razorpay-btn" data-name="Makeup Mirror" data-amount="49900">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="images/facewash.jpg" alt="Face Wash">
+        <h3>Face Wash</h3>
+        <p>₹199</p>
+        <button class="razorpay-btn" data-name="Face Wash" data-amount="19900">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About This Shop</h2>
+    <p>Welcome to D&F Cosmetic & Beauty Products, your one-stop destination for high-quality, trendy, and affordable makeup products. We believe beauty is for everyone — and we're here to help you express yourself, feel confident, and shine in your own unique way. From bold lipsticks to flawless foundations, we bring you products that are cruelty-free, safe, and made with love.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; BlushBerry. All rights reserved.</p>
+</footer>
+
+<a class="whatsapp-button" href="https://wa.me/919011495335" target="_blank">Chat on WhatsApp</a>
+
+<script>
+  document.querySelectorAll('.razorpay-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      var productName = this.getAttribute('data-name');
+      var productAmount = this.getAttribute('data-amount');
+
+      var options = {
+        key: 'YOUR_RAZORPAY_KEY', // Replace with your actual Razorpay key
+        amount: productAmount,
+        currency: 'INR',
+        name: 'BlushBerry',
+        description: 'Purchase of ' + productName,
+        image: 'images/logo.png',
+        handler: function(response) {
+          alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
+        },
+        prefill: {
+          name: '',
+          email: '',
+          contact: ''
+        },
+        notes: {
+          address: ''
+        },
+        theme: {
+          color: '#eab1c0'
+        },
+        modal: {
+          ondismiss: function() {
+            document.body.style.overflow = 'auto';
+          }
+        }
+      };
+
+      var rzp = new Razorpay(options);
+      rzp.open();
+
+      // Disable body scroll while Razorpay modal is open
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  // Restore scrolling when user comes back to the page
+  window.addEventListener('focus', () => {
+    document.body.style.overflow = 'auto';
+  });
+</script>
+<script>
+  function searchProducts() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const products = document.querySelectorAll('.product');
+  
+    products.forEach(product => {
+      const productName = product.querySelector('h3').innerText.toLowerCase();
+      if (productName.includes(input)) {
+        product.style.display = "block";
+      } else {
+        product.style.display = "none";
+      }
+    });
+  }
+  </script>
+  
+</body>
+</html>
